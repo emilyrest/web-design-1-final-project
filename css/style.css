@@ -5,24 +5,25 @@ html {
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: auto;
-    height: 100px;
-    margin-bottom: 40px;
-    margin-left: 2px;
-    margin-top: 20px;
+    height: auto;
+    margin-bottom: auto;
+    margin-top: auto;
     background-color: black;
     color: white;
 }
 
-header > nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-}
-
-header > nav > a {
+header ul a {
     color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  
+header ul li {
+    display: inline;
 }
 
 section.main {
@@ -38,7 +39,7 @@ section.main {
     height: 300px;
 }
 
-.banner > img {
+#banner > img {
     display: block;
     margin: 0px auto;
     max-width: 100%;
@@ -48,15 +49,15 @@ section.main {
 
 #container1 {
     display: grid;
-    grid-template-columns: 55% auto;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
 }
 
-.bio > img {
-    max-width: 40px;
-    height: auto;
+#bio img {
+    max-width: 60%;
 }
 
-.what-i-can-do {
+#what-i-can-do {
     background-color: #FAFAFA;
     margin: 0 auto;
     padding-left: 5%;
@@ -65,11 +66,11 @@ section.main {
     padding-bottom: 10%;
 }
 
-.what-i-can-do > h2 {
+#what-i-can-do > h2 {
     text-align: center;
 }
 
-.flex-container {
+#flex-container {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -77,8 +78,8 @@ section.main {
 
 #container2 {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
 }
 
 #container2 > div {
@@ -98,11 +99,11 @@ section.main {
     text-decoration: none;
 }
 
-.my-work {
+#my-work {
     text-align: center;
 }
 
-.my-work > p {
+#my-work > p {
     padding-left: 15%;
     padding-right: 15%;
 
@@ -110,12 +111,15 @@ section.main {
 
 #work {
     display: grid;
-    grid-template-columns: 7% 7%;
-    justify-content: space-between;
+    grid-template-rows: auto auto;
+}
+
+#work div img {
+    width: 30%;
 }
     
 
-.reviews {
+#reviews {
     background-color: black;
     color: white;
     text-align: center;
@@ -125,12 +129,16 @@ section.main {
     padding-right: 5%;
 }
 
+#reviews h2 {
+    padding-bottom: 30px;
+}
+
 #container3 {
     display: grid;
     grid-template-columns: auto auto;   
 }
 
-.contact-info {
+#contact-info {
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -139,15 +147,17 @@ section.main {
 }
 
 #social {
-    display: grid;
-    grid-template-columns: 7% 7% 7%;
-    align-items: center;
+    display: inline;
+}
+
+#social img {
+    width: 5%;
 }
 
 footer {
     text-align: center;
     color: white;
     background-color: black;
-    padding-top: .5px;
-    padding-bottom: .5px;
+    padding-top: .1px;
+    padding-bottom: .1px;
 }
