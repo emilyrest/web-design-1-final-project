@@ -50,7 +50,11 @@ section.main {
 #container1 {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-evenly;
+
+}
+
+#bio p {
+    max-width: 90%;
 }
 
 #bio img {
