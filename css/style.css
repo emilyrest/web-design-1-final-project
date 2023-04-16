@@ -1,3 +1,153 @@
 html {
     font-family: 'Roboto', sans-serif
 }
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    height: 100px;
+    margin-bottom: 40px;
+    margin-left: 2px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+}
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+header > nav > a {
+    color: white;
+}
+
+section.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+section.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 300px;
+}
+
+.banner > img {
+    display: block;
+    margin: 0px auto;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#container1 {
+    display: grid;
+    grid-template-columns: 55% auto;
+}
+
+.bio > img {
+    max-width: 40px;
+    height: auto;
+}
+
+.what-i-can-do {
+    background-color: #FAFAFA;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.what-i-can-do > h2 {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+}
+
+#container2 > div {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+#container2 > div > a {
+    color: white;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 5px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.my-work {
+    text-align: center;
+}
+
+.my-work > p {
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+#work {
+    display: grid;
+    grid-template-columns: 7% 7%;
+    justify-content: space-between;
+}
+    
+
+.reviews {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#container3 {
+    display: grid;
+    grid-template-columns: auto auto;   
+}
+
+.contact-info {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#social {
+    display: grid;
+    grid-template-columns: 7% 7% 7%;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: .5px;
+    padding-bottom: .5px;
+}
